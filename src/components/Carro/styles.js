@@ -5,7 +5,7 @@ export const CarroContenedor = styled.div`
 `
 
 export const BotonCarro = styled.button`
-    background-color: #118002;
+    background-color: #ff8a50;
     border: none;
     border-radius: 5px;
     color: #fff;

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const DeleteButon = styled.button`
     border: none;
-    background-color: #fb0207;
+    background-color: #ff8a50;
     border-radius: 50%;
     color: #fff;
     cursor: pointer;

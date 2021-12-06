@@ -24,6 +24,7 @@ function App() {
   const [cantidad,setCantidad]=useState(0)
   const [data, setData] = useState(informacion)
   const erased = useRef()
+
   const agregarAlCarro = (producto) => {
     if (data.carrito.find(x => x.id === producto.id)) {
       const carritoCopia = data.carrito.map(x => x.id === producto.id ? ({...x, cantidad: x.cantidad + 1}) : x)
@@ -40,10 +41,11 @@ function App() {
     if (data.carrito.find(x => x.id === producto.id)) {
       data.carrito.forEach((x,index) =>{   
         if( x.id === producto.id){
-          erased.current=producto.nombre;
+          erased.current = producto.nombre;
           data.carrito.splice(index,1);
         }
       })
+
       setData({...data})
     }
   }

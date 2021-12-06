@@ -9,4 +9,5 @@ export const Container = styled.div`
 
 export const H4 = styled.h4`
     text-align: right;
+    color: #ff5722
 `
